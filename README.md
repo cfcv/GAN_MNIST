@@ -21,10 +21,10 @@ Here i make a function to build the placeholder inputs of the generator and disc
 networks. 
 
 #### Building the Generator Network
-In this part i define a function that creates the generator network. It has two layers of n_units and 2*n_units respectively, with leaky relu activation and finally an output layer with tanh activation. It is defined with a generator variable scope so we can pass only the generator train variables for the optimizer.
+In this part is defined a function that creates the generator network. It has two layers of n_units and 2*n_units respectively, with leaky relu activation and finally an output layer with tanh activation. It is defined with a generator variable scope so we can pass only the generator train variables for the optimizer.
 
 #### Building the Discriminator Network
-In this part we define a function that creates the discriminator network. It has two layers of n_units and 2*n_units respectively, with a leakly relu activation and an output layer with sigmoid activation. It is defined with a discriminator variable scope so we can pass only the discriminator train variables for the optmizer.
+In this part is defined a function that creates the discriminator network. It has two layers of n_units and 2*n_units respectively, with a leakly relu activation and an output layer with sigmoid activation. It is defined with a discriminator variable scope so we can pass only the discriminator train variables for the optmizer.
 
 #### Putting all together
 Here i'm defining all the hyperparameters and using it to call the functions i've created to build the inputs, generator and two discriminators(one for the real data and another for the fake data). I'm defining also the losses and the optimizers.
@@ -33,11 +33,11 @@ Here i'm defining all the hyperparameters and using it to call the functions i'v
 In this part i'm training both networks with 200 epochs and in each epoch i append the losses and some samples of the generator for looking in the future.
 
 #### Viewing results
-Here i plot the training losses of every epoch and some samples of the last training epoch. Below you can see the evolution of the generator images throught the epochs and some sampling from it.
+Here the training losses of every epoch and some samples of the last training epoch are plotted. Below we can see the evolution of the generator images throught the epochs and some sampling from it.
 
 
-![alt text](https://github.com/cfcv/Dog_Breed/blob/master/images_test_final_app/dog_breed_result.png)
+![alt text](https://github.com/cfcv/GAN_MNIST/blob/master/photos/evolution_gan_mnist.png)
 
 Sampling:
-![alt text](https://github.com/cfcv/Dog_Breed/blob/master/images_test_final_app/dog_breed_result.png)
+![alt text](https://github.com/cfcv/GAN_MNIST/blob/master/photos/result_GAN_MNIST.png)
 
