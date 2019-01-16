@@ -38,6 +38,6 @@ Here the training losses of every epoch and some samples of the last training ep
 
 ![alt text](https://github.com/cfcv/GAN_MNIST/blob/master/photos/evolution_gan_mnist.png)
 
-Sampling:
+Sampling:  
 ![alt text](https://github.com/cfcv/GAN_MNIST/blob/master/photos/result_GAN_MNIST.png)
 
